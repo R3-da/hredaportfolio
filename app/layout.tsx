@@ -4,6 +4,7 @@ import Footer from '@/components/footer';
 import { Providers } from '@/lib/provider';
 import { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
 	title: 'Reda Haddan | Portfolio',
@@ -27,6 +28,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 				</main>
 				{/* </Providers> */}
 				<Analytics />
+				<SpeedInsights />
 			</body>
 			{/* <Footer /> */}
 		</html>
