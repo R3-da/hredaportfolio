@@ -3,6 +3,7 @@ import './globals.css'; // Import global CSS
 import Footer from '@/components/footer';
 import { Providers } from '@/lib/provider';
 import { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
 	title: 'Reda Haddan | Portfolio',
@@ -25,6 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 					<div>{children}</div>
 				</main>
 				{/* </Providers> */}
+				<Analytics />
 			</body>
 			{/* <Footer /> */}
 		</html>
