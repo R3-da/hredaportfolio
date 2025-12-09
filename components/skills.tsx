@@ -37,9 +37,9 @@ export default function Skills({ skills }: SkillsProps) {
 									{skill.title}
 								</h3>
 							</div>
-							<div className="flex flex-1 flex-col items-center justify-center">
-								{skill.technologies && skill.technologies.length > 0 && (
-									<>
+							{skill.technologies && skill.technologies.length > 0 && (
+								<>
+									<div className="flex flex-1 flex-col items-center justify-center">
 										<h4 className="pb-4 font-sans text-teal-600">
 											Technologies I Use
 										</h4>
@@ -51,9 +51,9 @@ export default function Skills({ skills }: SkillsProps) {
 												{tech}
 											</p>
 										))}
-									</>
-								)}
-							</div>
+									</div>
+								</>
+							)}
 						</div>
 					))}
 				</div>
