@@ -33,22 +33,22 @@ export default function Home() {
 		{
 			image: images.mobileDev,
 			title: 'MOBILE DEVELOPMENT',
-			technologies: ['Native Android Dev', 'React Native'],
+			technologies: [],
 		},
 		{
 			image: images.webDev,
 			title: 'WEB DEVELOPMENT',
-			technologies: ['Vue.js', 'React JS', '.NET', 'Laravel'],
+			technologies: [],
 		},
 		{
 			image: images.design,
 			title: 'UI/UX',
-			technologies: ['Figma', 'Adobe XD', 'Photoshop'],
+			technologies: [],
 		},
 		{
 			image: images.sound,
 			title: 'SOUND DESIGN',
-			technologies: ['FL Studio'],
+			technologies: [],
 		},
 	];
 

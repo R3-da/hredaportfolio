@@ -38,17 +38,21 @@ export default function Skills({ skills }: SkillsProps) {
 								</h3>
 							</div>
 							<div className="flex flex-1 flex-col items-center justify-center">
-								<h4 className="pb-4 font-sans text-teal-600">
-									Technologies I Use
-								</h4>
-								{skill.technologies.map((tech, techIndex) => (
-									<p
-										key={techIndex}
-										className="pb-2 font-mono text-gray-800 dark:text-white"
-									>
-										{tech}
-									</p>
-								))}
+								{skill.technologies && skill.technologies.length > 0 && (
+									<>
+										<h4 className="pb-4 font-sans text-teal-600">
+											Technologies I Use
+										</h4>
+										{skill.technologies.map((tech, techIndex) => (
+											<p
+												key={techIndex}
+												className="pb-2 font-mono text-gray-800 dark:text-white"
+											>
+												{tech}
+											</p>
+										))}
+									</>
+								)}
 							</div>
 						</div>
 					))}
