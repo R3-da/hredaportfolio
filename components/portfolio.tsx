@@ -23,7 +23,7 @@ export default function Portfolio({ items }: PortfolioProps) {
 						Portfolio
 					</h3>
 				</div>
-				<div className="grid grid-cols-2 flex-col gap-8 lg:flex lg:flex-row lg:gap-6">
+				<div className="grid grid-cols-2 flex-col gap-8 sm:flex sm:flex-row sm:gap-5 lg:gap-9">
 					{items.map((item, index) => (
 						<div className="relative flex-1" key={index}>
 							<div className="overflow-hidden rounded-lg">
@@ -46,14 +46,14 @@ export default function Portfolio({ items }: PortfolioProps) {
 													download={iconItem.link.endsWith('.apk')}
 													target="_blank"
 													rel="noopener noreferrer"
-													className="m-2 text-4xl text-white text-opacity-70 transition-colors duration-300 hover:text-opacity-100"
+													className="m-2 text-4xl text-white text-opacity-70 transition-colors duration-300 hover:text-opacity-100 sm:text-2xl md:text-3xl lg:text-4xl"
 												>
 													<IconComponent />
 												</a>
 											);
 										})}
 									</div>
-									<p className="mt-2 text-center font-sans text-lg font-medium text-white">
+									<p className="mt-2 text-center font-sans text-lg font-medium text-white sm:text-sm lg:text-lg">
 										{item.description}
 									</p>
 								</div>

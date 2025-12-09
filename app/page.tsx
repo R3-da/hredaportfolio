@@ -85,7 +85,7 @@ export default function Home() {
 			icons: [
 				{ icon: AiFillGithub, link: 'https://github.com/R3-da/JamsterScanner' },
 			],
-			description: 'Jamster : A MIDI Scanner/Transposer ',
+			description: 'Jamster : A MIDI Scanner & Transposer ',
 		},
 	];
 

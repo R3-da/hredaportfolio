@@ -19,11 +19,11 @@ export default function Skills({ skills }: SkillsProps) {
 						Skills
 					</h3>
 				</div>
-				<div className="flex flex-col gap-8 overflow-x-hidden md:grid md:grid-cols-2 md:grid-rows-2">
+				<div className="flex flex-col gap-7 overflow-x-hidden sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-9 lg:gap-10">
 					{skills.map((skill, index) => (
 						<div
 							key={index}
-							className="grid flex-1 gap-10 rounded-xl px-10 py-8 text-center shadow-lg dark:bg-slate-800 md:w-full lg:w-auto lg:grid-rows-2"
+							className="flex min-h-56 flex-1 gap-10 rounded-xl px-10 py-8 text-center shadow-lg dark:bg-slate-800 md:min-h-64 md:w-full lg:min-h-80 lg:w-auto"
 						>
 							<div className="flex flex-1 flex-col items-center justify-center">
 								<Image

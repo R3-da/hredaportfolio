@@ -17,9 +17,9 @@ export default function Hero({ profileImage }: HeroProps) {
 						</span>
 					</h2>
 					<h3 className="text-ellipsis whitespace-nowrap py-2 font-sans ~text-xl/4xl dark:text-white">
-						Software Engineer
+						Software Developer
 					</h3>
-					<div className="flex justify-center py-3 text-gray-600 ~/lg:~text-2xl/3xl ~/lg:~gap-4/8 dark:text-gray-400">
+					<div className="flex justify-center py-3 ~/lg:~gap-3/7">
 						<a
 							href="https://www.linkedin.com/in/reda-dev"
 							target="_blank"
@@ -27,8 +27,11 @@ export default function Hero({ profileImage }: HeroProps) {
 							onClick={() => {
 								window.open('https://www.linkedin.com/in/r-h-7zh', '_blank');
 							}}
+							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all duration-300 ease-out hover:border-white hover:text-white dark:border-gray-400 dark:text-gray-400 dark:hover:border-white dark:hover:text-white"
 						>
-							<AiFillLinkedin />
+							<span className="inline-flex aspect-square items-center justify-center text-2xl leading-none transition-all duration-300 ease-out group-hover:scale-125">
+								<AiFillLinkedin />
+							</span>
 						</a>
 						<a
 							href="https://stackoverflow.com/u/18568328"
@@ -37,8 +40,11 @@ export default function Hero({ profileImage }: HeroProps) {
 							onClick={() => {
 								window.open('https://stackoverflow.com/u/18568328', '_blank');
 							}}
+							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all duration-300 ease-out hover:border-white hover:text-white dark:border-gray-400 dark:text-gray-400 dark:hover:border-white dark:hover:text-white"
 						>
-							<BsStackOverflow />
+							<span className="inline-flex aspect-square items-center justify-center text-2xl leading-none transition-all duration-300 ease-out group-hover:scale-125">
+								<BsStackOverflow />
+							</span>
 						</a>
 						<a
 							href="https://github.com/R3-da"
@@ -47,8 +53,11 @@ export default function Hero({ profileImage }: HeroProps) {
 							onClick={() => {
 								window.open('https://github.com/R3-da', '_blank');
 							}}
+							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all duration-300 ease-out hover:border-white hover:text-white dark:border-gray-400 dark:text-gray-400 dark:hover:border-white dark:hover:text-white"
 						>
-							<AiFillGithub />
+							<span className="inline-flex aspect-square items-center justify-center text-2xl leading-none transition-all duration-300 ease-out group-hover:scale-125">
+								<AiFillGithub />
+							</span>
 						</a>
 					</div>
 				</div>
