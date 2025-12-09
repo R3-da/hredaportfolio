@@ -63,7 +63,7 @@ export default function Hero({ profileImage }: HeroProps) {
 						</a>
 						<button
 							onClick={handleQrClick}
-							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all hover:border-white hover:text-white dark:border-gray-400 dark:text-gray-400 dark:hover:border-white dark:hover:text-white"
+							className={`group inline-flex h-fit items-center justify-center rounded-xl border-4 p-3 transition-all hover:scale-110 ${isFlipped ? 'border-white text-white' : 'border-gray-600 text-gray-600'} dark:${isFlipped ? 'border-white text-white' : 'border-gray-400 text-gray-400'}`}
 						>
 							<AiOutlineQrcode className="text-2xl transition-all group-hover:scale-125" />
 						</button>
@@ -101,12 +101,12 @@ export default function Hero({ profileImage }: HeroProps) {
 								backfaceVisibility: 'hidden',
 								WebkitBackfaceVisibility: 'hidden',
 								padding: '40px',
-								boxShadow: 'inset 0 4px 10px rgba(0,0,0,0.4)',
+								boxShadow: 'inset 0px 0px 20px rgba(0,0,0,0.4)',
 							}}
 						>
 							<QRCode
 								value="https://www.redahaddan.com"
-								size={180 - 60} // subtract total padding to fit
+								size={180 - 70} // subtract total padding to fit
 								bgColor="transparent"
 								fgColor="#20293a"
 								level="H"
