@@ -63,7 +63,7 @@ export default function Hero({ profileImage }: HeroProps) {
 						</a>
 						<button
 							onClick={handleQrClick}
-							className={`group inline-flex h-fit items-center justify-center rounded-xl border-4 p-3 transition-all ${isFlipped ? 'border-white text-white' : 'border-gray-600 text-gray-600'} dark:${isFlipped ? 'border-white text-white' : 'border-gray-400 text-gray-400'}`}
+							className={`group inline-flex h-fit items-center justify-center rounded-xl border-4 p-3 transition-all ${isFlipped ? 'border-white text-white' : 'border-gray-400 text-gray-400'}`}
 						>
 							<AiOutlineQrcode className="text-2xl transition-all group-hover:scale-125" />
 						</button>
