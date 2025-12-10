@@ -71,23 +71,28 @@ export default function Hero({ profileImage }: HeroProps) {
 				</div>
 
 				{/* 3D Flip Circle */}
-				<div style={{ perspective: '1200px' }}>
+				<div
+					style={{ perspective: '1200px' }}
+					className={`transition-transform duration-700 ease-in-out ${isFlipped ? 'z-10 scale-125' : 'scale-100'}`}
+				>
 					<div
-						className={`relative flex-shrink-0 rounded-full border-4 ${borderClass}`}
+						className={`relative flex-shrink-0 border-4 ${borderClass} ${backFaceClass}`}
 						style={{
 							width: '220px',
 							height: '220px',
-							transition: 'transform 0.7s ease',
+							transition: 'transform 0.7s ease, border-radius 0.7s ease',
 							transformStyle: 'preserve-3d',
 							transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
+							borderRadius: isFlipped ? '20px' : '50%', // circle to rounded square
 						}}
 					>
 						{/* FRONT (Profile image) */}
 						<div
-							className="absolute inset-0 overflow-hidden rounded-full"
+							className="absolute inset-0 overflow-hidden"
 							style={{
 								backfaceVisibility: 'hidden',
 								WebkitBackfaceVisibility: 'hidden',
+								borderRadius: 'inherit',
 							}}
 						>
 							<Image src={profileImage} alt="" fill className="object-cover" />
@@ -95,18 +100,17 @@ export default function Hero({ profileImage }: HeroProps) {
 
 						{/* BACK (QR Code) */}
 						<div
-							className={`absolute inset-0 flex items-center justify-center rounded-full ${backFaceClass}`}
+							className={`absolute inset-0 flex items-center justify-center`}
 							style={{
 								transform: 'rotateY(180deg)',
 								backfaceVisibility: 'hidden',
 								WebkitBackfaceVisibility: 'hidden',
 								padding: '40px',
-								boxShadow: 'inset 0px 0px 20px rgba(0,0,0,0.4)',
+								transition: 'border-radius 0.7s ease',
 							}}
 						>
 							<QRCode
 								value="https://www.redahaddan.com"
-								size={180 - 70} // subtract total padding to fit
 								bgColor="transparent"
 								fgColor="#20293a"
 								level="H"
