@@ -73,7 +73,7 @@ export default function Hero({ profileImage }: HeroProps) {
 				{/* 3D Flip Circle */}
 				<div
 					style={{ perspective: '1200px' }}
-					className={`transition-transform duration-700 ease-in-out ${isFlipped ? 'z-10 scale-125' : 'scale-100'}`}
+					className={`transition-transform duration-700 ease-in-out ${isFlipped ? 'z-10 scale-110' : 'scale-100'}`}
 				>
 					<div
 						className={`relative flex-shrink-0 border-4 ${borderClass} ${backFaceClass}`}
@@ -105,7 +105,6 @@ export default function Hero({ profileImage }: HeroProps) {
 								transform: 'rotateY(180deg)',
 								backfaceVisibility: 'hidden',
 								WebkitBackfaceVisibility: 'hidden',
-								padding: '40px',
 								transition: 'border-radius 0.7s ease',
 							}}
 						>
@@ -114,6 +113,7 @@ export default function Hero({ profileImage }: HeroProps) {
 								bgColor="transparent"
 								fgColor="#20293a"
 								level="H"
+								style={{ width: '90%', height: '90%' }} // <-- fills parent container
 							/>
 						</div>
 					</div>
