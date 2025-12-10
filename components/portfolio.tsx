@@ -36,7 +36,7 @@ export default function Portfolio({ items }: PortfolioProps) {
 									alt={`Image ${index + 1}`}
 								/>
 								<div className="overlay-icons absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded-lg bg-black p-4 opacity-0 transition-opacity duration-300 hover:bg-opacity-80 hover:opacity-100">
-									<div className="flex flex-wrap items-center justify-center">
+									<div className="m-2 flex items-center justify-center gap-4">
 										{item.icons.map((iconItem, iconIndex) => {
 											const IconComponent = iconItem.icon;
 											return (
@@ -46,14 +46,14 @@ export default function Portfolio({ items }: PortfolioProps) {
 													download={iconItem.link.endsWith('.apk')}
 													target="_blank"
 													rel="noopener noreferrer"
-													className="m-2 text-4xl text-white text-opacity-70 transition-colors duration-300 hover:text-opacity-100 sm:text-2xl md:text-3xl lg:text-4xl"
+													className="text-2xl text-white text-opacity-70 transition-colors duration-300 hover:text-opacity-100 sm:text-2xl md:text-3xl lg:text-4xl"
 												>
 													<IconComponent />
 												</a>
 											);
 										})}
 									</div>
-									<p className="mt-2 text-center font-sans text-lg font-medium text-white sm:text-sm lg:text-lg">
+									<p className="mt-2 text-center font-sans text-xs font-medium text-white lg:text-sm">
 										{item.description}
 									</p>
 								</div>
