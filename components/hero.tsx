@@ -41,7 +41,7 @@ export default function Hero({ profileImage }: HeroProps) {
 							href="https://www.linkedin.com/in/reda-dev"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all hover:border-white hover:text-white dark:border-gray-400 dark:text-gray-400 dark:hover:border-white dark:hover:text-white"
+							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all dark:border-gray-400 dark:text-gray-400"
 						>
 							<AiFillLinkedin className="text-2xl transition-all group-hover:scale-125" />
 						</a>
@@ -49,7 +49,7 @@ export default function Hero({ profileImage }: HeroProps) {
 							href="https://stackoverflow.com/u/18568328"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all hover:border-white hover:text-white dark:border-gray-400 dark:text-gray-400 dark:hover:border-white dark:hover:text-white"
+							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all dark:border-gray-400 dark:text-gray-400"
 						>
 							<BsStackOverflow className="text-2xl transition-all group-hover:scale-125" />
 						</a>
@@ -57,13 +57,13 @@ export default function Hero({ profileImage }: HeroProps) {
 							href="https://github.com/R3-da"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all hover:border-white hover:text-white dark:border-gray-400 dark:text-gray-400 dark:hover:border-white dark:hover:text-white"
+							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all dark:border-gray-400 dark:text-gray-400"
 						>
 							<AiFillGithub className="text-2xl transition-all group-hover:scale-125" />
 						</a>
 						<button
 							onClick={handleQrClick}
-							className={`group inline-flex h-fit items-center justify-center rounded-xl border-4 p-3 transition-all hover:scale-110 ${isFlipped ? 'border-white text-white' : 'border-gray-600 text-gray-600'} dark:${isFlipped ? 'border-white text-white' : 'border-gray-400 text-gray-400'}`}
+							className={`group inline-flex h-fit items-center justify-center rounded-xl border-4 p-3 transition-all ${isFlipped ? 'border-white text-white' : 'border-gray-600 text-gray-600'} dark:${isFlipped ? 'border-white text-white' : 'border-gray-400 text-gray-400'}`}
 						>
 							<AiOutlineQrcode className="text-2xl transition-all group-hover:scale-125" />
 						</button>
