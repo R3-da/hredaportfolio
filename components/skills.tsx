@@ -23,7 +23,7 @@ export default function Skills({ skills }: SkillsProps) {
 					{skills.map((skill, index) => (
 						<div
 							key={index}
-							className="flex min-h-56 flex-1 gap-10 rounded-xl bg-[rgba(30,41,59,0.5)] px-10 py-8 text-center shadow-lg md:min-h-64 md:w-full lg:min-h-80 lg:w-auto"
+							className="before:border-gradient-to-tr relative flex min-h-56 flex-1 flex-col gap-6 overflow-hidden rounded-xl border border-transparent bg-[rgba(255,255,255,0.05)] px-10 py-8 text-center shadow-[0_8px_32px_rgba(0,0,0,0.2)] backdrop-blur-xl backdrop-saturate-150 before:absolute before:inset-0 before:rounded-3xl before:border before:bg-gradient-to-tr before:from-white/10 before:from-white/5 before:via-white/10 before:via-white/5 before:to-white/10 before:to-white/5 before:opacity-40 before:blur-3xl before:content-[''] dark:bg-[rgba(255,255,255,0.05)] md:min-h-64 md:w-full lg:min-h-80 lg:w-auto lg:rounded-3xl"
 						>
 							<div className="flex flex-1 flex-col items-center justify-center">
 								<Image
