@@ -19,7 +19,7 @@ export default function Skills({ skills }: SkillsProps) {
 						Skills
 					</h3>
 				</div>
-				<div className="flex flex-col gap-7 overflow-x-hidden sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-9 lg:gap-10">
+				<div className="flex flex-col gap-7 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-9 lg:gap-10">
 					{skills.map((skill, index) => (
 						<div
 							key={index}
