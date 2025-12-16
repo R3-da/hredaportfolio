@@ -41,7 +41,7 @@ export default function Hero({ profileImage }: HeroProps) {
 							href="https://www.linkedin.com/in/reda-dev"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all dark:border-gray-400 dark:text-gray-400"
+							className="group inline-flex h-fit transform items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all duration-200 active:scale-90 active:border-blue-500 active:text-blue-500 dark:border-gray-400 dark:text-gray-400"
 						>
 							<AiFillLinkedin className="text-2xl transition-all group-hover:scale-125" />
 						</a>
@@ -49,7 +49,7 @@ export default function Hero({ profileImage }: HeroProps) {
 							href="https://stackoverflow.com/u/18568328"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all dark:border-gray-400 dark:text-gray-400"
+							className="group inline-flex h-fit transform items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all duration-200 active:scale-90 active:border-orange-500 active:text-orange-500 dark:border-gray-400 dark:text-gray-400"
 						>
 							<BsStackOverflow className="text-2xl transition-all group-hover:scale-125" />
 						</a>
@@ -57,13 +57,13 @@ export default function Hero({ profileImage }: HeroProps) {
 							href="https://github.com/R3-da"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all dark:border-gray-400 dark:text-gray-400"
+							className="group inline-flex h-fit transform items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all duration-200 active:scale-90 active:border-gray-900 active:text-gray-900 dark:border-gray-400 dark:text-gray-400"
 						>
 							<AiFillGithub className="text-2xl transition-all group-hover:scale-125" />
 						</a>
 						<button
 							onClick={handleQrClick}
-							className={`group inline-flex h-fit items-center justify-center rounded-xl border-4 p-3 transition-all ${isFlipped ? 'border-white text-white' : 'border-gray-400 text-gray-400'}`}
+							className={`group inline-flex h-fit transform items-center justify-center rounded-xl border-4 p-3 transition-all duration-200 active:scale-90 ${isFlipped ? 'border-white text-white' : 'border-gray-400 text-gray-400'}`}
 						>
 							<AiOutlineQrcode className="text-2xl transition-all group-hover:scale-125" />
 						</button>
@@ -73,14 +73,13 @@ export default function Hero({ profileImage }: HeroProps) {
 				{/* 3D Flip Circle */}
 				<div
 					style={{ perspective: '1200px' }}
-					className={`transition-transform duration-700 ease-in-out ${isFlipped ? 'z-10 scale-110' : 'scale-100'}`}
+					className={`transform transition-transform duration-700 ease-in-out ${isFlipped ? 'z-10 scale-110' : 'scale-100'} active:scale-95`}
 				>
 					<div
-						className={`relative flex-shrink-0 border-4 ${borderClass} ${backFaceClass}`}
+						className={`relative flex-shrink-0 border-4 ${borderClass} ${backFaceClass} transition-all duration-300 ease-in-out`}
 						style={{
 							width: '220px',
 							height: '220px',
-							transition: 'transform 0.7s ease, border-radius 0.7s ease',
 							transformStyle: 'preserve-3d',
 							transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
 							borderRadius: isFlipped ? '20px' : '50%', // circle to rounded square
