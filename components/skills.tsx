@@ -23,7 +23,7 @@ export default function Skills({ skills }: SkillsProps) {
 					{skills.map((skill, index) => (
 						<div
 							key={index}
-							className="flex min-h-56 flex-1 gap-10 rounded-xl px-10 py-8 text-center shadow-lg dark:bg-slate-800 md:min-h-64 md:w-full lg:min-h-80 lg:w-auto"
+							className="flex min-h-56 flex-1 gap-10 rounded-xl bg-[rgba(30,41,59,0.5)] px-10 py-8 text-center shadow-lg md:min-h-64 md:w-full lg:min-h-80 lg:w-auto"
 						>
 							<div className="flex flex-1 flex-col items-center justify-center">
 								<Image
