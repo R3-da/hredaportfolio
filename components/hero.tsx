@@ -72,7 +72,7 @@ export default function Hero({ profileImage }: HeroProps) {
 							className={`group inline-flex h-fit items-center justify-center rounded-xl border-4 p-3 transition-all duration-200 ${isFlipped ? 'border-white text-white' : 'border-gray-400 text-gray-400'}`}
 						>
 							<span
-								className={`inline-flex items-center justify-center transition-transform duration-200 group-active:scale-90 ${isFlipped ? 'drop-shadow-[0_0_4px_white]' : ''}`}
+								className={`inline-flex items-center justify-center transition-transform duration-200 group-active:scale-90 ${isFlipped ? 'drop-shadow-[0_0_16px_white]' : ''}`}
 							>
 								<AiOutlineQrcode className="text-2xl" />
 							</span>
