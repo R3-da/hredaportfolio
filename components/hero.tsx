@@ -44,7 +44,7 @@ export default function Hero({ profileImage }: HeroProps) {
 							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all duration-200 active:border-blue-500 active:text-blue-500 dark:border-gray-400 dark:text-gray-400"
 						>
 							<span className="inline-flex items-center justify-center transition-transform duration-200 group-active:scale-90">
-								<AiFillLinkedin className="text-2xl transition-all group-hover:scale-125" />
+								<AiFillLinkedin className="text-2xl" />
 							</span>
 						</a>
 						<a
@@ -54,7 +54,7 @@ export default function Hero({ profileImage }: HeroProps) {
 							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all duration-200 active:border-orange-500 active:text-orange-500 dark:border-gray-400 dark:text-gray-400"
 						>
 							<span className="inline-flex items-center justify-center transition-transform duration-200 group-active:scale-90">
-								<BsStackOverflow className="text-2xl transition-all group-hover:scale-125" />
+								<BsStackOverflow className="text-2xl" />
 							</span>
 						</a>
 						<a
@@ -64,7 +64,7 @@ export default function Hero({ profileImage }: HeroProps) {
 							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all duration-200 active:border-gray-900 active:text-gray-900 dark:border-gray-400 dark:text-gray-400"
 						>
 							<span className="inline-flex items-center justify-center transition-transform duration-200 group-active:scale-90">
-								<AiFillGithub className="text-2xl transition-all group-hover:scale-125" />
+								<AiFillGithub className="text-2xl" />
 							</span>
 						</a>
 						<button
@@ -74,7 +74,7 @@ export default function Hero({ profileImage }: HeroProps) {
 							<span
 								className={`inline-flex items-center justify-center transition-transform duration-200 group-active:scale-90 ${isFlipped ? 'drop-shadow-[0_0_4px_white]' : ''}`}
 							>
-								<AiOutlineQrcode className="text-2xl transition-all group-hover:scale-125" />
+								<AiOutlineQrcode className="text-2xl" />
 							</span>
 						</button>
 					</div>
