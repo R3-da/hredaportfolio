@@ -41,31 +41,39 @@ export default function Hero({ profileImage }: HeroProps) {
 							href="https://www.linkedin.com/in/reda-dev"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="group inline-flex h-fit transform items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all duration-200 active:scale-90 active:border-blue-500 active:text-blue-500 dark:border-gray-400 dark:text-gray-400"
+							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all duration-200 active:border-blue-500 active:text-blue-500 dark:border-gray-400 dark:text-gray-400"
 						>
-							<AiFillLinkedin className="text-2xl transition-all group-hover:scale-125" />
+							<span className="inline-flex items-center justify-center transition-transform duration-200 group-active:scale-90">
+								<AiFillLinkedin className="text-2xl transition-all group-hover:scale-125" />
+							</span>
 						</a>
 						<a
 							href="https://stackoverflow.com/u/18568328"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="group inline-flex h-fit transform items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all duration-200 active:scale-90 active:border-orange-500 active:text-orange-500 dark:border-gray-400 dark:text-gray-400"
+							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all duration-200 active:border-orange-500 active:text-orange-500 dark:border-gray-400 dark:text-gray-400"
 						>
-							<BsStackOverflow className="text-2xl transition-all group-hover:scale-125" />
+							<span className="inline-flex items-center justify-center transition-transform duration-200 group-active:scale-90">
+								<BsStackOverflow className="text-2xl transition-all group-hover:scale-125" />
+							</span>
 						</a>
 						<a
 							href="https://github.com/R3-da"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="group inline-flex h-fit transform items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all duration-200 active:scale-90 active:border-gray-900 active:text-gray-900 dark:border-gray-400 dark:text-gray-400"
+							className="group inline-flex h-fit items-center justify-center rounded-xl border-4 border-gray-600 p-3 text-gray-600 transition-all duration-200 active:border-gray-900 active:text-gray-900 dark:border-gray-400 dark:text-gray-400"
 						>
-							<AiFillGithub className="text-2xl transition-all group-hover:scale-125" />
+							<span className="inline-flex items-center justify-center transition-transform duration-200 group-active:scale-90">
+								<AiFillGithub className="text-2xl transition-all group-hover:scale-125" />
+							</span>
 						</a>
 						<button
 							onClick={handleQrClick}
-							className={`group inline-flex h-fit transform items-center justify-center rounded-xl border-4 p-3 transition-all duration-200 active:scale-90 ${isFlipped ? 'border-white text-white' : 'border-gray-400 text-gray-400'}`}
+							className={`group inline-flex h-fit items-center justify-center rounded-xl border-4 p-3 transition-all duration-200 ${isFlipped ? 'border-white text-white' : 'border-gray-400 text-gray-400'}`}
 						>
-							<AiOutlineQrcode className="text-2xl transition-all group-hover:scale-125" />
+							<span className="inline-flex items-center justify-center transition-transform duration-200 group-active:scale-90">
+								<AiOutlineQrcode className="text-2xl transition-all group-hover:scale-125" />
+							</span>
 						</button>
 					</div>
 				</div>
